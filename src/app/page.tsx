@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Phone } from "lucide-react";
 import AboutUsIsland from "@/components/landing/AboutUsIsland";
 import LandingNav from "@/components/landing/LandingNav";
 import LandingContactForm from "@/components/landing/LandingContactForm";
@@ -794,7 +795,14 @@ export default function LandingPage() {
             </div>
             <div>
               <h4 className="font-bold mb-4">Contact us</h4>
-              <p className="text-white/80">info@tremadschools.com</p>
+              <a
+                href="tel:+2348028306083"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+              >
+                <Phone className="w-4 h-4 text-primary-green" />
+                +234 802 830 6083
+              </a>
+              <p className="text-white/80">tremadschool2015@gmail.com</p>
               <p className="mt-2 text-white/80">Follow us</p>
               <div className="flex gap-3 mt-2">
                 {/* Social icons */}
